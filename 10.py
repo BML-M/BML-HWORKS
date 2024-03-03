@@ -15,7 +15,8 @@ print_params(b=25)
 print_params(c=[1, 2, 3])
 
 values_list = ('to me', 45, 'years old')
-values_dict = {1, 'строка',True}
-print_params(*values_list,**values_dict)
-
-
+values_dict = {'a': 555, 'b': 44484, 'c': 4444}
+print_params(*values_list)
+print_params(**values_dict)
+values_list_2 = ('YAHOO', 100)
+print_params(*values_list_2, 42)
