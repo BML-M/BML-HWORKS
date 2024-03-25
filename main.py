@@ -1,7 +1,10 @@
-import module_1
-print(__name__)
-print(dir(module_1))
-print(dir(module_1.print_params))
-print(help(module_1))
-module_1.print_params('Привет')
-module_1.print_param_2('Good luck')
+def test_function():
+    def inner_function():
+        print('Я в области видимости функции test_function')
+
+    print(inner_function)
+    inner_function()
+
+
+test_function()
+inner_function()
